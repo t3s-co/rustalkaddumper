@@ -1,0 +1,35 @@
+{
+  "name": "Rust-Data",
+  "version": "1.0.0",
+  "description": "Gather and parse data for Rust Game.",
+  "main": "app.js",
+  "repository": "https://github.com/erobin27/Rust-Data.git",
+  "author": "erobin27",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./bin/app.js",
+    "start:dev": "rimraf bin && node --max-old-space-size=8192 --require ts-node/register ./src/app.ts",
+    "dev": "ts-node ./src/app.ts"
+  },
+  "dependencies": {
+    "@octokit/auth-app": "^6.1.1",
+    "@octokit/rest": "^20.1.0",
+    "@types/node": "^20.12.7",
+    "axios": "^1.6.8",
+    "dayjs": "^1.11.11",
+    "dotenv": "^16.4.5",
+    "json5": "^2.2.3",
+    "jsonwebtoken": "^9.0.2",
+    "openai": "^4.68.1",
+    "rimraf": "^5.0.5",
+    "simple-vdf": "^1.1.1",
+    "typescript": "^5.4.5",
+    "vdf": "^0.0.2",
+    "vdf-parser": "^1.2.1",
+    "vdfplus": "^1.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  }
+}

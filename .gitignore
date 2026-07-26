@@ -1,0 +1,5 @@
+﻿output/
+programs/il2cpp/output/
+programs/rust_client/
+node_modules/
+.env
